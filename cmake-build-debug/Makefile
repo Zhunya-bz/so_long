@@ -142,6 +142,249 @@ so_long/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/build
 .PHONY : so_long/fast
 
+get_next_line.o: get_next_line.c.o
+
+.PHONY : get_next_line.o
+
+# target to build an object file
+get_next_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line.c.o
+.PHONY : get_next_line.c.o
+
+get_next_line.i: get_next_line.c.i
+
+.PHONY : get_next_line.i
+
+# target to preprocess a source file
+get_next_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line.c.i
+.PHONY : get_next_line.c.i
+
+get_next_line.s: get_next_line.c.s
+
+.PHONY : get_next_line.s
+
+# target to generate assembly for a file
+get_next_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line.c.s
+.PHONY : get_next_line.c.s
+
+libft/ft_bzero.o: libft/ft_bzero.c.o
+
+.PHONY : libft/ft_bzero.o
+
+# target to build an object file
+libft/ft_bzero.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_bzero.c.o
+.PHONY : libft/ft_bzero.c.o
+
+libft/ft_bzero.i: libft/ft_bzero.c.i
+
+.PHONY : libft/ft_bzero.i
+
+# target to preprocess a source file
+libft/ft_bzero.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_bzero.c.i
+.PHONY : libft/ft_bzero.c.i
+
+libft/ft_bzero.s: libft/ft_bzero.c.s
+
+.PHONY : libft/ft_bzero.s
+
+# target to generate assembly for a file
+libft/ft_bzero.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_bzero.c.s
+.PHONY : libft/ft_bzero.c.s
+
+libft/ft_calloc.o: libft/ft_calloc.c.o
+
+.PHONY : libft/ft_calloc.o
+
+# target to build an object file
+libft/ft_calloc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_calloc.c.o
+.PHONY : libft/ft_calloc.c.o
+
+libft/ft_calloc.i: libft/ft_calloc.c.i
+
+.PHONY : libft/ft_calloc.i
+
+# target to preprocess a source file
+libft/ft_calloc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_calloc.c.i
+.PHONY : libft/ft_calloc.c.i
+
+libft/ft_calloc.s: libft/ft_calloc.c.s
+
+.PHONY : libft/ft_calloc.s
+
+# target to generate assembly for a file
+libft/ft_calloc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_calloc.c.s
+.PHONY : libft/ft_calloc.c.s
+
+libft/ft_split.o: libft/ft_split.c.o
+
+.PHONY : libft/ft_split.o
+
+# target to build an object file
+libft/ft_split.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_split.c.o
+.PHONY : libft/ft_split.c.o
+
+libft/ft_split.i: libft/ft_split.c.i
+
+.PHONY : libft/ft_split.i
+
+# target to preprocess a source file
+libft/ft_split.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_split.c.i
+.PHONY : libft/ft_split.c.i
+
+libft/ft_split.s: libft/ft_split.c.s
+
+.PHONY : libft/ft_split.s
+
+# target to generate assembly for a file
+libft/ft_split.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_split.c.s
+.PHONY : libft/ft_split.c.s
+
+libft/ft_strchr.o: libft/ft_strchr.c.o
+
+.PHONY : libft/ft_strchr.o
+
+# target to build an object file
+libft/ft_strchr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_strchr.c.o
+.PHONY : libft/ft_strchr.c.o
+
+libft/ft_strchr.i: libft/ft_strchr.c.i
+
+.PHONY : libft/ft_strchr.i
+
+# target to preprocess a source file
+libft/ft_strchr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_strchr.c.i
+.PHONY : libft/ft_strchr.c.i
+
+libft/ft_strchr.s: libft/ft_strchr.c.s
+
+.PHONY : libft/ft_strchr.s
+
+# target to generate assembly for a file
+libft/ft_strchr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_strchr.c.s
+.PHONY : libft/ft_strchr.c.s
+
+libft/ft_strdup.o: libft/ft_strdup.c.o
+
+.PHONY : libft/ft_strdup.o
+
+# target to build an object file
+libft/ft_strdup.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_strdup.c.o
+.PHONY : libft/ft_strdup.c.o
+
+libft/ft_strdup.i: libft/ft_strdup.c.i
+
+.PHONY : libft/ft_strdup.i
+
+# target to preprocess a source file
+libft/ft_strdup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_strdup.c.i
+.PHONY : libft/ft_strdup.c.i
+
+libft/ft_strdup.s: libft/ft_strdup.c.s
+
+.PHONY : libft/ft_strdup.s
+
+# target to generate assembly for a file
+libft/ft_strdup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_strdup.c.s
+.PHONY : libft/ft_strdup.c.s
+
+libft/ft_strjoin.o: libft/ft_strjoin.c.o
+
+.PHONY : libft/ft_strjoin.o
+
+# target to build an object file
+libft/ft_strjoin.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_strjoin.c.o
+.PHONY : libft/ft_strjoin.c.o
+
+libft/ft_strjoin.i: libft/ft_strjoin.c.i
+
+.PHONY : libft/ft_strjoin.i
+
+# target to preprocess a source file
+libft/ft_strjoin.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_strjoin.c.i
+.PHONY : libft/ft_strjoin.c.i
+
+libft/ft_strjoin.s: libft/ft_strjoin.c.s
+
+.PHONY : libft/ft_strjoin.s
+
+# target to generate assembly for a file
+libft/ft_strjoin.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_strjoin.c.s
+.PHONY : libft/ft_strjoin.c.s
+
+libft/ft_strlen.o: libft/ft_strlen.c.o
+
+.PHONY : libft/ft_strlen.o
+
+# target to build an object file
+libft/ft_strlen.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_strlen.c.o
+.PHONY : libft/ft_strlen.c.o
+
+libft/ft_strlen.i: libft/ft_strlen.c.i
+
+.PHONY : libft/ft_strlen.i
+
+# target to preprocess a source file
+libft/ft_strlen.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_strlen.c.i
+.PHONY : libft/ft_strlen.c.i
+
+libft/ft_strlen.s: libft/ft_strlen.c.s
+
+.PHONY : libft/ft_strlen.s
+
+# target to generate assembly for a file
+libft/ft_strlen.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_strlen.c.s
+.PHONY : libft/ft_strlen.c.s
+
+libft/ft_substr.o: libft/ft_substr.c.o
+
+.PHONY : libft/ft_substr.o
+
+# target to build an object file
+libft/ft_substr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_substr.c.o
+.PHONY : libft/ft_substr.c.o
+
+libft/ft_substr.i: libft/ft_substr.c.i
+
+.PHONY : libft/ft_substr.i
+
+# target to preprocess a source file
+libft/ft_substr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_substr.c.i
+.PHONY : libft/ft_substr.c.i
+
+libft/ft_substr.s: libft/ft_substr.c.s
+
+.PHONY : libft/ft_substr.s
+
+# target to generate assembly for a file
+libft/ft_substr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_substr.c.s
+.PHONY : libft/ft_substr.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -169,6 +412,114 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/main.c.s
 .PHONY : main.c.s
 
+mlx/font.o: mlx/font.c.o
+
+.PHONY : mlx/font.o
+
+# target to build an object file
+mlx/font.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/mlx/font.c.o
+.PHONY : mlx/font.c.o
+
+mlx/font.i: mlx/font.c.i
+
+.PHONY : mlx/font.i
+
+# target to preprocess a source file
+mlx/font.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/mlx/font.c.i
+.PHONY : mlx/font.c.i
+
+mlx/font.s: mlx/font.c.s
+
+.PHONY : mlx/font.s
+
+# target to generate assembly for a file
+mlx/font.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/mlx/font.c.s
+.PHONY : mlx/font.c.s
+
+mlx/mlx_png.o: mlx/mlx_png.c.o
+
+.PHONY : mlx/mlx_png.o
+
+# target to build an object file
+mlx/mlx_png.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/mlx/mlx_png.c.o
+.PHONY : mlx/mlx_png.c.o
+
+mlx/mlx_png.i: mlx/mlx_png.c.i
+
+.PHONY : mlx/mlx_png.i
+
+# target to preprocess a source file
+mlx/mlx_png.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/mlx/mlx_png.c.i
+.PHONY : mlx/mlx_png.c.i
+
+mlx/mlx_png.s: mlx/mlx_png.c.s
+
+.PHONY : mlx/mlx_png.s
+
+# target to generate assembly for a file
+mlx/mlx_png.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/mlx/mlx_png.c.s
+.PHONY : mlx/mlx_png.c.s
+
+mlx/mlx_string_put.o: mlx/mlx_string_put.c.o
+
+.PHONY : mlx/mlx_string_put.o
+
+# target to build an object file
+mlx/mlx_string_put.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/mlx/mlx_string_put.c.o
+.PHONY : mlx/mlx_string_put.c.o
+
+mlx/mlx_string_put.i: mlx/mlx_string_put.c.i
+
+.PHONY : mlx/mlx_string_put.i
+
+# target to preprocess a source file
+mlx/mlx_string_put.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/mlx/mlx_string_put.c.i
+.PHONY : mlx/mlx_string_put.c.i
+
+mlx/mlx_string_put.s: mlx/mlx_string_put.c.s
+
+.PHONY : mlx/mlx_string_put.s
+
+# target to generate assembly for a file
+mlx/mlx_string_put.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/mlx/mlx_string_put.c.s
+.PHONY : mlx/mlx_string_put.c.s
+
+mlx/mlx_xpm.o: mlx/mlx_xpm.c.o
+
+.PHONY : mlx/mlx_xpm.o
+
+# target to build an object file
+mlx/mlx_xpm.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/mlx/mlx_xpm.c.o
+.PHONY : mlx/mlx_xpm.c.o
+
+mlx/mlx_xpm.i: mlx/mlx_xpm.c.i
+
+.PHONY : mlx/mlx_xpm.i
+
+# target to preprocess a source file
+mlx/mlx_xpm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/mlx/mlx_xpm.c.i
+.PHONY : mlx/mlx_xpm.c.i
+
+mlx/mlx_xpm.s: mlx/mlx_xpm.c.s
+
+.PHONY : mlx/mlx_xpm.s
+
+# target to generate assembly for a file
+mlx/mlx_xpm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/mlx/mlx_xpm.c.s
+.PHONY : mlx/mlx_xpm.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -178,9 +529,48 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... so_long"
+	@echo "... get_next_line.o"
+	@echo "... get_next_line.i"
+	@echo "... get_next_line.s"
+	@echo "... libft/ft_bzero.o"
+	@echo "... libft/ft_bzero.i"
+	@echo "... libft/ft_bzero.s"
+	@echo "... libft/ft_calloc.o"
+	@echo "... libft/ft_calloc.i"
+	@echo "... libft/ft_calloc.s"
+	@echo "... libft/ft_split.o"
+	@echo "... libft/ft_split.i"
+	@echo "... libft/ft_split.s"
+	@echo "... libft/ft_strchr.o"
+	@echo "... libft/ft_strchr.i"
+	@echo "... libft/ft_strchr.s"
+	@echo "... libft/ft_strdup.o"
+	@echo "... libft/ft_strdup.i"
+	@echo "... libft/ft_strdup.s"
+	@echo "... libft/ft_strjoin.o"
+	@echo "... libft/ft_strjoin.i"
+	@echo "... libft/ft_strjoin.s"
+	@echo "... libft/ft_strlen.o"
+	@echo "... libft/ft_strlen.i"
+	@echo "... libft/ft_strlen.s"
+	@echo "... libft/ft_substr.o"
+	@echo "... libft/ft_substr.i"
+	@echo "... libft/ft_substr.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mlx/font.o"
+	@echo "... mlx/font.i"
+	@echo "... mlx/font.s"
+	@echo "... mlx/mlx_png.o"
+	@echo "... mlx/mlx_png.i"
+	@echo "... mlx/mlx_png.s"
+	@echo "... mlx/mlx_string_put.o"
+	@echo "... mlx/mlx_string_put.i"
+	@echo "... mlx/mlx_string_put.s"
+	@echo "... mlx/mlx_xpm.o"
+	@echo "... mlx/mlx_xpm.i"
+	@echo "... mlx/mlx_xpm.s"
 .PHONY : help
 
 

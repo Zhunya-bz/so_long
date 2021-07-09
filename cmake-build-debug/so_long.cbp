@@ -78,7 +78,52 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/saltmer/CLionProjects/so_long/get_next_line.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/saltmer/CLionProjects/so_long/get_next_line.h">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_bzero.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_calloc.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_split.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_strchr.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_strdup.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_strjoin.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_strlen.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_substr.c">
+			<Option target="so_long"/>
+		</Unit>
 		<Unit filename="/Users/saltmer/CLionProjects/so_long/main.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/saltmer/CLionProjects/so_long/mlx/font.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/saltmer/CLionProjects/so_long/mlx/man/man3/mlx.3">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/saltmer/CLionProjects/so_long/mlx/mlx_png.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/saltmer/CLionProjects/so_long/mlx/mlx_string_put.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/saltmer/CLionProjects/so_long/mlx/mlx_xpm.c">
 			<Option target="so_long"/>
 		</Unit>
 		<Unit filename="/Users/saltmer/CLionProjects/so_long/CMakeLists.txt">
