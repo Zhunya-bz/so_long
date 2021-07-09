@@ -2,6 +2,7 @@
 #define SO_LONG_H
 
 #include "mlx/mlx.h"
+#include <unistd.h>
 
 typedef struct	s_data {
 	void	*img;
@@ -14,6 +15,13 @@ typedef struct	s_data {
 typedef struct	s_vars {
 	void	*mlx;
 	void	*win;
+	char	*relative_path;
+	int		width;
+	int		height;
+	void	*img;
+	int 	x;
+	int 	y;
+	int 	color;
 }				t_vars;
 
 #endif
