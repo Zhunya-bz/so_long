@@ -15,12 +15,12 @@ HEADER = so_long.h
 LIB_DIR = ./libft
 
 %.o: %.c
-	${CC} -Imlx -c $< -o $@
+	${CC} ${CFLAGS} -Imlx -c $< -o $@
 
 ${NAME}:	${OBJS} ${HEADER}
 			make -C ${LIB_DIR}
 			#${CC} ${CFLAGS} libft/libft.a ${OBJS} -o ${NAME}
-			${CC} libft/libft.a -Lmlx -lmlx -framework OpenGL -framework AppKit ${OBJS} -o ${NAME}
+			${CC} ${CFLAGS} libft/libft.a -Lmlx -lmlx -framework OpenGL -framework AppKit ${OBJS} -o ${NAME}
 
 
 all:    ${NAME}

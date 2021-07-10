@@ -16,18 +16,28 @@ typedef struct	s_data {
 typedef struct	s_vars {
 	void	*mlx;
 	void	*win;
-	char	*relative_path;
+	char	*path_fon;
+	char	*path_cat;
+	char	*path_sos;
+	char	*path_gras;
+	char	*path_house;
 	int		width;
 	int		height;
 	int 	img_w;
 	int 	img_h;
 	int 	arr_h;
 	int 	arr_w;
-	void	*img;
+	void	*img_fon;
+	void	*img_cat;
+	void	*img_sos;
+	void	*img_gras;
+	void	*img_house;
 	char	**arr;
 	int 	x;
 	int 	y;
-	int 	color;
+	int 	count;
+	int 	coll;
+	int 	c;
 }				t_vars;
 
 
