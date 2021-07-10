@@ -2,6 +2,8 @@
 #define SO_LONG_H
 
 #include "mlx/mlx.h"
+#include "get_next_line.h"
+#include "libft/libft.h"
 #include <unistd.h>
 #include <fcntl.h>
 
@@ -38,7 +40,18 @@ typedef struct	s_vars {
 	int 	count;
 	int 	coll;
 	int 	c;
+	char 	buf;
 }				t_vars;
+
+void	read_map(char **argv, t_vars *var);
+void	fill_matrix(char **argv, t_vars *var);
+int		ft_get_width(char **argv);
+int		ft_get_height(char **argv);
+void	picture(t_vars *var);
+void	cycle(int i, int j, t_vars *var);
+int		close_win(t_vars *var);
+int		key_hook(int keycode, t_vars *var);
+void	print_move(t_vars *var);
 
 
 #endif

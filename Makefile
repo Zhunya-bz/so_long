@@ -1,4 +1,5 @@
-SRCS = main.c get_next_line.c get_next_line_utils.c
+SRCS = main.c get_next_line.c get_next_line_utils.c \
+		map.c matrix_arr.c graphic.c moved.c
 
 OBJS = ${SRCS:.c=.o}
 
@@ -19,7 +20,6 @@ LIB_DIR = ./libft
 
 ${NAME}:	${OBJS} ${HEADER}
 			make -C ${LIB_DIR}
-			#${CC} ${CFLAGS} libft/libft.a ${OBJS} -o ${NAME}
 			${CC} ${CFLAGS} libft/libft.a -Lmlx -lmlx -framework OpenGL -framework AppKit ${OBJS} -o ${NAME}
 
 
