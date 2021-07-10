@@ -52,23 +52,23 @@
 //	return (0);
 //{
 
-static void free_func(char **arr, int j)
-{
-	while (j >= 0)
-	{
-		//printf("%d\n", j);
-		free(arr[j]);
-		j--;
-	}
-	free(arr);
-	arr = NULL;
-}
+//static void free_func(char **arr, int j)
+//{
+//	while (j >= 0)
+//	{
+//		//printf("%d\n", j);
+//		free(arr[j]);
+//		j--;
+//	}
+//	free(arr);
+//	arr = NULL;
+//}
 
-static int	close_win(int keycode, t_vars *var)
+static int	close_win(t_vars *var)
 {
-	(void)keycode;
 	mlx_destroy_window(var->mlx, var->win);
-	free_func(var->arr, var->arr_h - 1);
+	//free_func(var->arr, var->arr_h - 1);
+	exit (0);
 	return (0);
 }
 
@@ -80,15 +80,14 @@ static void print_move(t_vars *var)
 	ft_putstr_fd("\n", 1);
 }
 
-static void go_up(int keycode, t_vars *var)
+static void go_up(t_vars *var)
 {
 	if (var->arr[var->y - 1][var->x] == 'E' && var->coll == var->c)
 	{
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, var->x *
 								var->img_h,(var->y + 1) * var->img_w);
-		close_win(keycode, var);
 		print_move(var);
-		exit(0);
+		close_win(var);
 	}
 	if (var->y > 1 && var->arr[var->y - 1][var->x] != '1' && var->arr[var->y
 	- 1][var->x] != 'E')
@@ -110,15 +109,14 @@ static void go_up(int keycode, t_vars *var)
 	}
 }
 
-static void go_down(int keycode, t_vars *var)
+static void go_down(t_vars *var)
 {
 	if (var->arr[var->y + 1][var->x] == 'E' && var->coll == var->c)
 	{
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, var->x *
 								var->img_h,(var->y - 1) * var->img_w);
-		close_win(keycode, var);
 		print_move(var);
-		exit(0);
+		close_win(var);
 	}
 	if (var->y + 1 < var->arr_h - 1 && var->arr[var->y + 1][var->x] != '1' &&
 	var->arr[var->y + 1][var->x] != 'E')
@@ -140,15 +138,14 @@ static void go_down(int keycode, t_vars *var)
 		print_move(var);
 	}
 }
-static void go_right(int keycode, t_vars *var)
+static void go_right(t_vars *var)
 {
 	if (var->arr[var->y][var->x + 1] == 'E' && var->coll == var->c)
 	{
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, (var->x - 1) *
 																  var->img_h,var->y * var->img_w);
-		close_win(keycode, var);
 		print_move(var);
-		exit(0);
+		close_win(var);
 	}
 	if (var->x < var->arr_w - 2 && var->arr[var->y][var->x + 1] != '1' &&
 	var->arr[var->y][var->x + 1] != 'E')
@@ -170,15 +167,14 @@ static void go_right(int keycode, t_vars *var)
 		print_move(var);
 	}
 }
-static void go_left(int keycode, t_vars *var)
+static void go_left(t_vars *var)
 {
 	if (var->arr[var->y][var->x - 1] == 'E' && var->coll == var->c)
 	{
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, (var->x + 1) *
 																  var->img_h,var->y * var->img_w);
-		close_win(keycode, var);
 		print_move(var);
-		exit(0);
+		close_win(var);
 	}
 	if (var->x > 1 && var->arr[var->y][var->x - 1] != '1' &&
 	var->arr[var->y][var->x - 1] != 'E')
@@ -196,7 +192,6 @@ static void go_left(int keycode, t_vars *var)
 								var->x * var->img_h, var->y * var->img_w);
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, (var->x + 1) *
 																  var->img_h,var->y * var->img_w);
-		//закрашиваем котика с прошлого места
 		print_move(var);
 	}
 }
@@ -205,17 +200,17 @@ static int key_hook(int keycode, t_vars *var)
 {
 	if (keycode == 53)
 	{
-		close_win(keycode, var);
+		close_win(var);
 		exit(0);
 	}
 	if (keycode == 1)
-		go_down(keycode, var);
+		go_down(var);
 	if (keycode == 13)
-		go_up(keycode, var);
+		go_up(var);
 	if (keycode == 2)
-		go_right(keycode, var);
+		go_right(var);
 	if (keycode == 0)
-		go_left(keycode, var);
+		go_left(var);
 	return (0);
 }
 
@@ -425,6 +420,33 @@ static void picture(t_vars *var)
 	var->img_house = mlx_xpm_file_to_image(var->mlx, var->path_house, &size,&size);
 }
 
+static void cycle(int i, int j, t_vars *var)
+{
+	while (j < var->arr_w)
+	{
+		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, j *
+															   var->img_h,i *
+															   var->img_w);
+		if (var->arr[i][j] == '1')
+			mlx_put_image_to_window(var->mlx, var->win, var->img_gras,
+									j * var->img_h, i * var->img_w);
+		if (var->arr[i][j] == 'P')
+		{
+			mlx_put_image_to_window(var->mlx, var->win, var->img_cat,
+									j * var->img_h, i * var->img_w);
+			var->x = j;
+			var->y = i;
+		}
+		if (var->arr[i][j] == 'E')
+			mlx_put_image_to_window(var->mlx, var->win, var->img_house,
+									j * var->img_h, i * var->img_w);
+		if (var->arr[i][j] == 'C')
+			mlx_put_image_to_window(var->mlx, var->win, var->img_sos,
+									j * var->img_h, i * var->img_w);
+		j++;
+	}
+}
+
 int main(int argc, char **argv)
 {
 	t_vars var;
@@ -443,33 +465,11 @@ int main(int argc, char **argv)
 		while (i < var.arr_h)
 		{
 			j = 0;
-			while (j < var.arr_w)
-			{
-				mlx_put_image_to_window(var.mlx, var.win, var.img_fon, j *
-				var.img_h,i * var.img_w);
-				if (var.arr[i][j] == '1')
-					mlx_put_image_to_window(var.mlx, var.win, var.img_gras,
-											j * var.img_h, i * var.img_w);
-				if (var.arr[i][j] == 'P')
-				{
-					mlx_put_image_to_window(var.mlx, var.win, var.img_cat,
-											j * var.img_h, i * var.img_w);
-					var.x = j;
-					var.y = i;
-				}
-				if (var.arr[i][j] == 'E')
-					mlx_put_image_to_window(var.mlx, var.win, var.img_house,
-											j * var.img_h, i * var.img_w);
-				if (var.arr[i][j] == 'C')
-					mlx_put_image_to_window(var.mlx, var.win, var.img_sos,
-											j * var.img_h, i * var.img_w);
-				j++;
-			}
+			cycle(i, j, &var);
 			i++;
 		}
-		if (!mlx_hook(var.win, 17, 0, close_win, &var))
-			exit(0);
 		mlx_key_hook(var.win, key_hook, &var);
+		mlx_hook(var.win, 17, 0, close_win, &var);
 		mlx_loop(var.mlx);
 	}
 	else
