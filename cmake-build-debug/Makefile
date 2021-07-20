@@ -67,10 +67,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/saltmer/CLionProjects/so_long
+CMAKE_SOURCE_DIR = /Users/saltmer/CLionProjects/so_long_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/saltmer/CLionProjects/so_long/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/saltmer/CLionProjects/so_long_2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saltmer/CLionProjects/so_long/cmake-build-debug/CMakeFiles /Users/saltmer/CLionProjects/so_long/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/CMakeFiles /Users/saltmer/CLionProjects/so_long_2/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saltmer/CLionProjects/so_long/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -141,33 +141,6 @@ so_long: cmake_check_build_system
 so_long/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/build
 .PHONY : so_long/fast
-
-get_next_line.o: get_next_line.c.o
-
-.PHONY : get_next_line.o
-
-# target to build an object file
-get_next_line.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line.c.o
-.PHONY : get_next_line.c.o
-
-get_next_line.i: get_next_line.c.i
-
-.PHONY : get_next_line.i
-
-# target to preprocess a source file
-get_next_line.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line.c.i
-.PHONY : get_next_line.c.i
-
-get_next_line.s: get_next_line.c.s
-
-.PHONY : get_next_line.s
-
-# target to generate assembly for a file
-get_next_line.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line.c.s
-.PHONY : get_next_line.c.s
 
 libft/ft_bzero.o: libft/ft_bzero.c.o
 
@@ -385,33 +358,6 @@ libft/ft_substr.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft/ft_substr.c.s
 .PHONY : libft/ft_substr.c.s
 
-main.o: main.c.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/main.c.o
-.PHONY : main.c.o
-
-main.i: main.c.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/main.c.s
-.PHONY : main.c.s
-
 mlx/font.o: mlx/font.c.o
 
 .PHONY : mlx/font.o
@@ -520,6 +466,60 @@ mlx/mlx_xpm.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/mlx/mlx_xpm.c.s
 .PHONY : mlx/mlx_xpm.c.s
 
+src/get_next_line.o: src/get_next_line.c.o
+
+.PHONY : src/get_next_line.o
+
+# target to build an object file
+src/get_next_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/src/get_next_line.c.o
+.PHONY : src/get_next_line.c.o
+
+src/get_next_line.i: src/get_next_line.c.i
+
+.PHONY : src/get_next_line.i
+
+# target to preprocess a source file
+src/get_next_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/src/get_next_line.c.i
+.PHONY : src/get_next_line.c.i
+
+src/get_next_line.s: src/get_next_line.c.s
+
+.PHONY : src/get_next_line.s
+
+# target to generate assembly for a file
+src/get_next_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/src/get_next_line.c.s
+.PHONY : src/get_next_line.c.s
+
+src/main.o: src/main.c.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/src/main.c.s
+.PHONY : src/main.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -529,9 +529,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... so_long"
-	@echo "... get_next_line.o"
-	@echo "... get_next_line.i"
-	@echo "... get_next_line.s"
 	@echo "... libft/ft_bzero.o"
 	@echo "... libft/ft_bzero.i"
 	@echo "... libft/ft_bzero.s"
@@ -556,9 +553,6 @@ help:
 	@echo "... libft/ft_substr.o"
 	@echo "... libft/ft_substr.i"
 	@echo "... libft/ft_substr.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... mlx/font.o"
 	@echo "... mlx/font.i"
 	@echo "... mlx/font.s"
@@ -571,6 +565,12 @@ help:
 	@echo "... mlx/mlx_xpm.o"
 	@echo "... mlx/mlx_xpm.i"
 	@echo "... mlx/mlx_xpm.s"
+	@echo "... src/get_next_line.o"
+	@echo "... src/get_next_line.i"
+	@echo "... src/get_next_line.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

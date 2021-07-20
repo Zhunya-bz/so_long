@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/saltmer/CLionProjects/so_long/cmake-build-debug"/>
+				<Option working_dir="/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/saltmer/CLionProjects/so_long/cmake-build-debug"/>
+				<Option working_dir="/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/saltmer/CLionProjects/so_long/cmake-build-debug"/>
+				<Option working_dir="/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="so_long">
-				<Option output="/Users/saltmer/CLionProjects/so_long/cmake-build-debug/so_long" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/saltmer/CLionProjects/so_long/cmake-build-debug"/>
+				<Option output="/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/so_long" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -51,15 +51,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 so_long"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 so_long"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="so_long/fast">
-				<Option output="/Users/saltmer/CLionProjects/so_long/cmake-build-debug/so_long" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/saltmer/CLionProjects/so_long/cmake-build-debug"/>
+				<Option output="/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/so_long" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -71,62 +71,59 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 so_long/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 so_long/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/saltmer/CLionProjects/so_long_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/get_next_line.c">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/libft/ft_bzero.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/get_next_line.h">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/libft/ft_calloc.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_bzero.c">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/libft/ft_split.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_calloc.c">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/libft/ft_strchr.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_split.c">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/libft/ft_strdup.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_strchr.c">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/libft/ft_strjoin.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_strdup.c">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/libft/ft_strlen.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_strjoin.c">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/libft/ft_substr.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_strlen.c">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/mlx/font.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/libft/ft_substr.c">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/mlx/man/man3/mlx.3">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/main.c">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/mlx/mlx_png.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/mlx/font.c">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/mlx/mlx_string_put.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/mlx/man/man3/mlx.3">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/mlx/mlx_xpm.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/mlx/mlx_png.c">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/src/get_next_line.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/mlx/mlx_string_put.c">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/src/main.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/mlx/mlx_xpm.c">
-			<Option target="so_long"/>
-		</Unit>
-		<Unit filename="/Users/saltmer/CLionProjects/so_long/CMakeLists.txt">
+		<Unit filename="/Users/saltmer/CLionProjects/so_long_2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

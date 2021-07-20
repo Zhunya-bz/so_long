@@ -21,6 +21,9 @@ typedef struct s_vars {
 	char	*path_fon;
 	char	*path_cat;
 	char	*path_sos;
+	char	*path_sos2;
+	char	*path_sos3;
+	char	*path_sos4;
 	char	*path_gras;
 	char	*path_house;
 	int		width;
@@ -32,6 +35,9 @@ typedef struct s_vars {
 	void	*img_fon;
 	void	*img_cat;
 	void	*img_sos;
+	void	*img_sos2;
+	void	*img_sos3;
+	void	*img_sos4;
 	void	*img_gras;
 	void	*img_house;
 	char	**arr;
@@ -41,6 +47,7 @@ typedef struct s_vars {
 	int		coll;
 	int		c;
 	char	buf;
+	int		flag;
 }				t_vars;
 
 void	read_map(char **argv, t_vars *var);
