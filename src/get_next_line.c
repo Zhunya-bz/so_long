@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
+#include "../libft/libft.h"
 #define BUFFER_SIZE 1
 
 static char	*check_rem_n(char **rem, char **p_to_n, char **line, char **tmp)

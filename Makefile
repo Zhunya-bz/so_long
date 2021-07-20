@@ -1,5 +1,9 @@
-SRCS = main.c get_next_line.c get_next_line_utils.c \
-		map.c matrix_arr.c graphic.c moved.c
+SRCS_NAME = main.c get_next_line.c get_next_line_utils.c \
+			map.c matrix_arr.c graphic.c moved.c
+
+SRCS_DIR = ./src
+
+SRCS = ${addprefix $(SRCS_DIR)/,$(SRCS_NAME)}
 
 OBJS = ${SRCS:.c=.o}
 
@@ -11,7 +15,11 @@ CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 
-HEADER = so_long.h
+HEADER_NAME = so_long.h get_next_line.h
+
+HEADER_DIR = ./include
+
+HEADER = ${addprefix $(HEADER_DIR)/,$(HEADER_NAME)}
 
 LIB_DIR = ./libft
 

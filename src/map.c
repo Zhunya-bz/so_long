@@ -1,4 +1,4 @@
-#include "so_long.h"
+#include "../include/so_long.h"
 
 static void	check_charac(t_vars *var, int i, int j, int flag)
 {

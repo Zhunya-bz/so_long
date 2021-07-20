@@ -1,4 +1,4 @@
-#include "so_long.h"
+#include "../include/so_long.h"
 
 void	picture(t_vars *var)
 {
@@ -6,11 +6,11 @@ void	picture(t_vars *var)
 
 	var->img_h = 64;
 	var->img_w = 64;
-	var->path_fon = "./fon-64.xpm";
-	var->path_cat = "./cat.xpm";
-	var->path_sos = "./sausage.xpm";
-	var->path_gras = "./grass.xpm";
-	var->path_house = "./home.xpm";
+	var->path_fon = "img/fon-64.xpm";
+	var->path_cat = "img/cat.xpm";
+	var->path_sos = "img/sausage.xpm";
+	var->path_gras = "img/grass.xpm";
+	var->path_house = "img/home.xpm";
 	var->win = mlx_new_window(var->mlx, var->width, var->height, "2D Game!");
 	var->img_fon = mlx_xpm_file_to_image(var->mlx, var->path_fon, &size, &size);
 	var->img_cat = mlx_xpm_file_to_image(var->mlx, var->path_cat, &size, &size);
