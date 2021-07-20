@@ -1,4 +1,4 @@
-./.vscode
-./cmake-*
-./.idea
+/.vscode
+/cmake-*
+/.idea
 CMakeL*
