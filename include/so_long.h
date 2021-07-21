@@ -50,7 +50,7 @@ typedef struct s_vars {
 	int		c;
 	char	buf;
 	int		flag;
-	char 	*str;
+	char	*str;
 }				t_vars;
 
 void	read_map(char **argv, t_vars *var);
@@ -62,5 +62,8 @@ void	cycle(int i, int j, t_vars *var);
 int		close_win(t_vars *var);
 int		key_hook(int keycode, t_vars *var);
 void	print_move(t_vars *var);
+void	free_func(char **arr, int j);
+void	clear_move(t_vars *var);
+int		my_hook(t_vars *var);
 
 #endif

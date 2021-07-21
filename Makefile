@@ -1,5 +1,5 @@
 SRCS_NAME = main.c get_next_line.c get_next_line_utils.c \
-			map.c matrix_arr.c graphic.c moved.c
+			map.c matrix_arr.c graphic.c moved.c so_long_utils.c
 
 SRCS_DIR = ./src
 
