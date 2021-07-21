@@ -6,7 +6,6 @@ void	picture(t_vars *var)
 
 	var->img_h = 64;
 	var->img_w = 64;
-//	ft_putstr_fd("er\n",1);
 	var->path_fon = "./img/fon-64.xpm";
 	var->path_cat = "./img/cat.xpm";
 	var->path_sos = "./img/1.xpm";
@@ -15,7 +14,9 @@ void	picture(t_vars *var)
 	var->path_sos2 = "./img/1-2.xpm";
 	var->path_sos3 = "./img/1-3.xpm";
 	var->path_sos4 = "./img/1-4.xpm";
-	var->win = mlx_new_window(var->mlx, var->width, var->height, "2D Game!");
+	var->path_dog = "./img/dog-2.xpm";
+	var->win = mlx_new_window(var->mlx, var->width, var->height + 25, "2D "
+																  "Game!");
 	var->img_fon = mlx_xpm_file_to_image(var->mlx, var->path_fon, &size, &size);
 	var->img_cat = mlx_xpm_file_to_image(var->mlx, var->path_cat, &size, &size);
 	var->img_sos = mlx_xpm_file_to_image(var->mlx, var->path_sos, &size, &size);
@@ -29,6 +30,7 @@ void	picture(t_vars *var)
 			&size);
 	var->img_house = mlx_xpm_file_to_image(var->mlx, var->path_house, &size,
 			&size);
+	var->img_dog = mlx_xpm_file_to_image(var->mlx, var->path_dog, &size, &size);
 }
 
 void	cycle(int i, int j, t_vars *var)
@@ -72,7 +74,11 @@ void	cycle(int i, int j, t_vars *var)
 																		   *
 																		   var->img_h,
 										i * var->img_w);
-			}
+		}
+		if (var->arr[i][j] == 'A')
+		{
+			mlx_put_image_to_window(var->mlx, var->win, var->img_dog, j *
+					var->img_h, i * var->img_w);
 		}
 		j++;
 	}

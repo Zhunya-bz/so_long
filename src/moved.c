@@ -2,11 +2,17 @@
 
 static void	go_up(t_vars *var)
 {
-	if (var->arr[var->y - 1][var->x] == 'E' && var->coll == var->c)
+	if ((var->arr[var->y - 1][var->x] == 'E' && var->coll == var->c) ||
+		(var->arr[var->y - 1][var->x] == 'A'))
 	{
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, var->x
 			* var->img_h, (var->y + 1) * var->img_w);
 		print_move(var);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00ceffbc, var->str);
+		var->str = ft_itoa(var->count);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00310043, var->str);
 		ft_putstr_fd("Game over!\n", 1);
 		close_win(var);
 	}
@@ -18,7 +24,9 @@ static void	go_up(t_vars *var)
 			var->coll++;
 			var->arr[var->y - 1][var->x] = '0';
 		}
+		var->arr[var->y][var->x] = '0';
 		var->y--;
+		var->arr[var->y][var->x] = 'P';
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, var->x
 			* var->img_h, var->y * var->img_w);
 		mlx_put_image_to_window(var->mlx, var->win, var->img_cat, var->x
@@ -26,16 +34,27 @@ static void	go_up(t_vars *var)
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, var->x
 			* var->img_h, (var->y + 1) * var->img_w);
 		print_move(var);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00ceffbc, var->str);
+		var->str = ft_itoa(var->count);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00310043, var->str);
 	}
 }
 
 static void	go_down(t_vars *var)
 {
-	if (var->arr[var->y + 1][var->x] == 'E' && var->coll == var->c)
+	if ((var->arr[var->y + 1][var->x] == 'E' && var->coll == var->c) ||
+			(var->arr[var->y + 1][var->x] == 'A'))
 	{
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, var->x
 			* var->img_h, (var->y - 1) * var->img_w);
 		print_move(var);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00ceffbc, var->str);
+		var->str = ft_itoa(var->count);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00310043, var->str);
 		ft_putstr_fd("Game over!\n", 1);
 		close_win(var);
 	}
@@ -47,7 +66,9 @@ static void	go_down(t_vars *var)
 			var->coll++;
 			var->arr[var->y + 1][var->x] = '0';
 		}
+		var->arr[var->y][var->x] = '0';
 		var->y++;
+		var->arr[var->y][var->x] = 'P';
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, var->x
 			* var->img_h, var->y * var->img_w);
 		mlx_put_image_to_window(var->mlx, var->win, var->img_cat, var->x
@@ -55,16 +76,27 @@ static void	go_down(t_vars *var)
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, var->x
 			* var->img_h, (var->y - 1) * var->img_w);
 		print_move(var);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00ceffbc, var->str);
+		var->str = ft_itoa(var->count);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00310043, var->str);
 	}
 }
 
 static void	go_right(t_vars *var)
 {
-	if (var->arr[var->y][var->x + 1] == 'E' && var->coll == var->c)
+	if ((var->arr[var->y][var->x + 1] == 'E' && var->coll == var->c) ||
+		(var->arr[var->y][var->x + 1] == 'A'))
 	{
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, (var->x - 1)
 			* var->img_h, var->y * var->img_w);
 		print_move(var);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00ceffbc, var->str);
+		var->str = ft_itoa(var->count);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00310043, var->str);
 		ft_putstr_fd("Game over!\n", 1);
 		close_win(var);
 	}
@@ -76,7 +108,9 @@ static void	go_right(t_vars *var)
 			var->coll++;
 			var->arr[var->y][var->x + 1] = '0';
 		}
+		var->arr[var->y][var->x] = '0';
 		var->x++;
+		var->arr[var->y][var->x] = 'P';
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, var->x
 			* var->img_h, var->y * var->img_w);
 		mlx_put_image_to_window(var->mlx, var->win, var->img_cat, var->x
@@ -84,16 +118,27 @@ static void	go_right(t_vars *var)
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, (var->x - 1)
 			* var->img_h, var->y * var->img_w);
 		print_move(var);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00ceffbc, var->str);
+		var->str = ft_itoa(var->count);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00310043, var->str);
 	}
 }
 
 static void	go_left(t_vars *var)
 {
-	if (var->arr[var->y][var->x - 1] == 'E' && var->coll == var->c)
+	if ((var->arr[var->y][var->x - 1] == 'E' && var->coll == var->c) ||
+		(var->arr[var->y][var->x - 1] == 'A'))
 	{
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, (var->x + 1)
 			* var->img_h, var->y * var->img_w);
 		print_move(var);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00ceffbc, var->str);
+		var->str = ft_itoa(var->count);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00310043, var->str);
 		ft_putstr_fd("Game over!\n", 1);
 		close_win(var);
 	}
@@ -105,7 +150,9 @@ static void	go_left(t_vars *var)
 			var->coll++;
 			var->arr[var->y][var->x - 1] = '0';
 		}
+		var->arr[var->y][var->x] = '0';
 		var->x--;
+		var->arr[var->y][var->x] = 'P';
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, var->x
 			* var->img_h, var->y * var->img_w);
 		mlx_put_image_to_window(var->mlx, var->win, var->img_cat, var->x
@@ -113,6 +160,11 @@ static void	go_left(t_vars *var)
 		mlx_put_image_to_window(var->mlx, var->win, var->img_fon, (var->x + 1)
 			* var->img_h, var->y * var->img_w);
 		print_move(var);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00ceffbc, var->str);
+		var->str = ft_itoa(var->count);
+		mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
+					   0x00310043, var->str);
 	}
 }
 

@@ -14,22 +14,14 @@ int my_hook(t_vars *var)
 	int j;
 
 	i = 0;
-	j = 0;
-//	while (1)
-//	{
-	i = 0;
 	var->flag++;
-	ft_putnbr_fd(var->flag, 1);
-//			exit(1);
 	while (i < var->arr_h)
 	{
 		j = 0;
-		cycle(var->x, var->y, var);
+		cycle(i, j, var);
 		i++;
 	}
 	usleep(100000);
-//	mlx_key_hook(var->win, key_hook, &var);
-//	}
 	return (0);
 }
 
@@ -48,29 +40,26 @@ int	main(int argc, char **argv)
 		var.flag = -1;
 		read_map(argv, &var);
 		picture(&var);
-//		while (1)
-//		{
-			i = 0;
-			var.flag++;
-			ft_putnbr_fd(var.flag, 1);
-//			exit(1);
-			while (i < var.arr_h)
-			{
-				j = 0;
-				cycle(i, j, &var);
-				i++;
-			}
-			sleep(1);
-//			ft_putnbr_fd(var.flag, 1);
-			mlx_key_hook(var.win, key_hook, &var);
-//			ft_putnbr_fd(var.flag, 1);
-			mlx_hook(var.win, 17, 0, close_win, &var);
-//			ft_putnbr_fd(var.flag, 1);
+		while (i < var.arr_h)
+		{
+			j = 0;
+			cycle(i, j, &var);
+			i++;
+		}
+		j = 0;
+		while (j < var.arr_w)
+		{
+			mlx_put_image_to_window(var.mlx, var.win, var.img_fon,
+									j * var.img_h, i * var.img_w);
+			j++;
+		}
+		var.str = ft_itoa(var.count);
+		mlx_string_put(var.mlx, var.win, var.width / 2, var.height + 1,
+				 0x00310043, var.str);
+		mlx_key_hook(var.win, key_hook, &var);
+		mlx_hook(var.win, 17, 0, close_win, &var);
 		mlx_loop_hook(var.mlx, my_hook, &var);
-			mlx_loop(var.mlx);
-//			ft_putnbr_fd(var.flag, 1);
-//		}
-		//mlx_loop(var.mlx);
+		mlx_loop(var.mlx);
 	}
 	else
 		ft_putstr_fd("Error\nArgument is invalid\n", 1);
