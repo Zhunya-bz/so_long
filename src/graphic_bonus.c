@@ -12,7 +12,7 @@ void	pic(t_vars *var)
 	var->path_sos2 = "./img/1-2.xpm";
 	var->path_sos3 = "./img/1-3.xpm";
 	var->path_sos4 = "./img/1-4.xpm";
-//	var->path_dog = "./img/dog-2.xpm";
+	var->path_dog = "./img/dog-2.xpm";
 }
 
 void	picture(t_vars *var)
@@ -35,7 +35,7 @@ void	picture(t_vars *var)
 			&size);
 	var->img_house = mlx_xpm_file_to_image(var->mlx, var->path_house, &size,
 			&size);
-//	var->img_dog = mlx_xpm_file_to_image(var->mlx, var->path_dog, &size, &size);
+	var->img_dog = mlx_xpm_file_to_image(var->mlx, var->path_dog, &size, &size);
 }
 
 static void	cycle_2(int i, int j, t_vars *var)
@@ -54,6 +54,11 @@ static void	cycle_2(int i, int j, t_vars *var)
 		else
 			mlx_put_image_to_window(var->mlx, var->win, var->img_sos4, j
 				* var->img_h, i * var->img_w);
+	}
+	if (var->arr[i][j] == 'A')
+	{
+		mlx_put_image_to_window(var->mlx, var->win, var->img_dog, j
+			* var->img_h, i * var->img_w);
 	}
 }
 

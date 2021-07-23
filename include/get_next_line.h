@@ -16,10 +16,5 @@
 # include <unistd.h>
 
 int		get_next_line(int fd, char **line);
-int		ft_strlen(char *str);
-char	*ft_strchr(const char *s, int c);
-char	*ft_strdup(const char *src);
-char	*ft_strjoin(char const *s1, char const *s2);
-void	*ft_calloc(size_t count, size_t size);
 
 #endif

@@ -48,6 +48,8 @@ typedef struct s_vars {
 	int		count;
 	int		coll;
 	int		c;
+	int 	e;
+	int 	p;
 	char	buf;
 	int		flag;
 	char	*str;

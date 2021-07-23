@@ -1,9 +1,16 @@
-SRCS_NAME = main.c get_next_line.c get_next_line_utils.c \
+SRCS_NAME = main.c get_next_line.c \
 			map.c matrix_arr.c graphic.c moved.c so_long_utils.c
+
+SRCS_BON_NAME = main.c get_next_line.c \
+                map_bonus.c matrix_arr.c graphic_bonus.c moved_bonus.c so_long_utils.c
 
 SRCS_DIR = ./src
 
 SRCS = ${addprefix $(SRCS_DIR)/,$(SRCS_NAME)}
+
+SRCS_BONUS = ${addprefix $(SRCS_DIR)/,$(SRCS_BON_NAME)}
+
+OBJS_BONUS = ${SRCS_BONUS:.c=.o}
 
 OBJS = ${SRCS:.c=.o}
 
@@ -23,18 +30,24 @@ HEADER = ${addprefix $(HEADER_DIR)/,$(HEADER_NAME)}
 
 LIB_DIR = ./libft
 
+MLX = -Lmlx -lmlx -framework OpenGL -framework AppKit
+
 %.o: %.c
 	${CC} ${CFLAGS} -Imlx -c $< -o $@
 
 ${NAME}:	${OBJS} ${HEADER}
 			make -C ${LIB_DIR}
-			${CC} ${CFLAGS} libft/libft.a -Lmlx -lmlx -framework OpenGL -framework AppKit ${OBJS} -o ${NAME}
+			${CC} ${CFLAGS} libft/libft.a ${MLX} libmlx.dylib ${OBJS} -o ${NAME}
 
 
 all:    ${NAME}
 
+bonus:	${OBJS_BONUS} ${HEADER}
+		make -C ${LIB_DIR}
+		${CC} ${CFLAGS} libft/libft.a ${MLX} libmlx.dylib ${OBJS_BONUS} -o ${NAME}
+
 clean:
-		${RM} ${OBJS}
+		${RM} ${OBJS} ${OBJS_BONUS}
 		make clean -C ${LIB_DIR}
 
 fclean: clean
@@ -43,7 +56,4 @@ fclean: clean
 
 re:     fclean all
 
-bonus:  ${OBJS_CHECK} ${HEADER}
-		${CC} ${CFLAGS} libft/libft.a ${OBJS_CHECK} -o ${NAME_CHECK}
-
-.PHONY: fclean clean all re
+.PHONY: fclean clean all re bonus

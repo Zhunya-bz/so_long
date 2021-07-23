@@ -51,9 +51,10 @@ static void	check_pos(t_vars *var, int i, int j)
 				var->c++;
 			else if (var->arr[i][j] == 'P')
 				var->p++;
-			else if (var->arr[i][j] != '0' && var->arr[i][j] != '1')
+			else if (var->arr[i][j] != '1' && var->arr[i][j] != '0' &&
+				var->arr[i][j] != 'A')
 			{
-				ft_putstr_fd("Error\nInvalid map\n", 1);
+				ft_putstr_fd("Error\nInvalid map!\n", 1);
 				exit(1);
 			}
 			j++;

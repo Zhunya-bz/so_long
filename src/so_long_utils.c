@@ -13,6 +13,7 @@ void	clear_move(t_vars *var)
 	print_move(var);
 	mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
 		   0x00ceffbc, var->str);
+	free(var->str);
 	var->str = ft_itoa(var->count);
 	mlx_string_put(var->mlx, var->win, var->width / 2, var->height + 1,
 		   0x00310043, var->str);
